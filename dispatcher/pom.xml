@@ -14,7 +14,7 @@
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
-        <telegrambot.starter.version>5.0.1</telegrambot.starter.version>
+        <telegrambot.starter.version>6.1.0</telegrambot.starter.version>
     </properties>
 
     <dependencies>
@@ -27,6 +27,12 @@
             <groupId>org.telegram</groupId>
             <artifactId>telegrambots-spring-boot-starter</artifactId>
             <version>${telegrambot.starter.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>ru.relex</groupId>
+            <artifactId>common-rabbitmq</artifactId>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
 
