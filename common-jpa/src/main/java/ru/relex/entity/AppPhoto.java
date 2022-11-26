@@ -11,10 +11,13 @@ import javax.persistence.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "binary_content")
-public class BinaryContent {
+@Table(name = "app_photo")
+public class AppPhoto {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private byte[] fileAsArrayOfBytes;
+    private String telegramFileId;
+    @OneToOne
+    private BinaryContent binaryContent;
+    private Integer fileSize;
 }
