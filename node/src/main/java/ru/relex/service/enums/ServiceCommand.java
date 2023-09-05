@@ -1,10 +1,12 @@
 package ru.relex.service.enums;
 
 public enum ServiceCommand {
+
     HELP("/help"),
     REGISTRATION("/registration"),
     CANCEL("/cancel"),
     START("/start");
+
     private final String value;
 
     ServiceCommand(String value) {
@@ -13,11 +15,11 @@ public enum ServiceCommand {
 
     @Override
     public String toString() {
-	return value;
+        return value;
     }
 
     public static ServiceCommand fromValue(String v) {
-        for (ServiceCommand c: ServiceCommand.values()) {
+        for (ServiceCommand c : ServiceCommand.values()) {
             if (c.value.equals(v)) {
                 return c;
             }

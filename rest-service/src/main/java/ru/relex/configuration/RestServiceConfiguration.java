@@ -7,6 +7,7 @@ import ru.relex.utils.CryptoTool;
 
 @Configuration
 public class RestServiceConfiguration {
+
     @Value("${salt}")
     private String salt;
 
