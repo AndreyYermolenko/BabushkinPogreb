@@ -1,0 +1,21 @@
+server:
+  port: 8084
+  ssl:
+    enabled: false
+
+bot:
+  name: babushkin_pogreb_bot
+  token: 5502187775:AAGhk05dnYy6e5SQtrjgNaDyMLtGgoirRIg
+  uri: https://five-spiders-write.loca.lt
+
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: userok
+    password: p@ssw0rd
+    queues:
+      text-message-update: text_message_update
+      doc-message-update: doc_message_update
+      photo-message-update: photo_message_update
+      answer-message: answer_message

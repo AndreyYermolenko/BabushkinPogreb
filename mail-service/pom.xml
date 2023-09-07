@@ -14,6 +14,7 @@
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
+        <common-utils.version>1.0-SNAPSHOT</common-utils.version>
     </properties>
 
     <dependencies>
@@ -21,14 +22,21 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-mail</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-amqp</artifactId>
+        </dependency>
+
         <dependency>
             <groupId>ru.relex</groupId>
             <artifactId>common-utils</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>${common-utils.version}</version>
         </dependency>
     </dependencies>
 

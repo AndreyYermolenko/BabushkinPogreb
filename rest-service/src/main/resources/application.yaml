@@ -1,0 +1,12 @@
+server:
+  port: 8086
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5433/pogreb
+    username: userok
+    password: p@ssw0rd
+  jpa:
+    generate-ddl: true
+
+salt: Pq12GSnZ5CwkrmutojxQbMl3cRi8speFya760ONUYKgThHAWJIfLdD9V4XEvzB

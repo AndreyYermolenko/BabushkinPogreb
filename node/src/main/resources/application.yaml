@@ -1,0 +1,32 @@
+server:
+  port: 8085
+
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: userok
+    password: p@ssw0rd
+    queues:
+      text-message-update: text_message_update
+      doc-message-update: doc_message_update
+      photo-message-update: photo_message_update
+      answer-message: answer_message
+      registration-mail: registration_mail
+  datasource:
+    url: jdbc:postgresql://localhost:5433/pogreb
+    username: userok
+    password: p@ssw0rd
+  jpa:
+    generate-ddl: true
+
+token: 5502187775:AAGhk05dnYy6e5SQtrjgNaDyMLtGgoirRIg
+service:
+  file_info:
+    uri: https://api.telegram.org/bot{token}/getFile?file_id={fileId}
+  file_storage:
+    uri: https://api.telegram.org/file/bot{token}/{filePath}
+
+link:
+  address: 127.0.0.1:8086
+salt: Pq12GSnZ5CwkrmutojxQbMl3cRi8speFya760ONUYKgThHAWJIfLdD9V4XEvzB

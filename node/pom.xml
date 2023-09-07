@@ -14,6 +14,11 @@
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
+        <javax-mail.version>1.4</javax-mail.version>
+        <common-utils.version>1.0-SNAPSHOT</common-utils.version>
+        <common-jpa.version>1.0-SNAPSHOT</common-jpa.version>
+        <hibernate-types.version>2.2.2</hibernate-types.version>
+        <postgresql.version>42.2.18</postgresql.version>
     </properties>
 
     <dependencies>
@@ -34,12 +39,6 @@
         </dependency>
 
         <dependency>
-            <groupId>ru.relex</groupId>
-            <artifactId>common-rabbitmq</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
-
-        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
         </dependency>
@@ -47,31 +46,31 @@
         <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
-            <version>42.2.18</version>
+            <version>${postgresql.version}</version>
         </dependency>
 
         <dependency>
             <groupId>com.vladmihalcea</groupId>
             <artifactId>hibernate-types-52</artifactId>
-            <version>2.2.2</version>
+            <version>${hibernate-types.version}</version>
         </dependency>
 
         <dependency>
             <groupId>ru.relex</groupId>
             <artifactId>common-jpa</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>${common-jpa.version}</version>
         </dependency>
 
         <dependency>
             <groupId>ru.relex</groupId>
             <artifactId>common-utils</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>${common-utils.version}</version>
         </dependency>
 
         <dependency>
             <groupId>javax.mail</groupId>
             <artifactId>mail</artifactId>
-            <version>1.4</version>
+            <version>${javax-mail.version}</version>
         </dependency>
 
         <dependency>

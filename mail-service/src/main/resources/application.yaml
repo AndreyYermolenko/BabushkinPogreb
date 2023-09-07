@@ -1,0 +1,21 @@
+server:
+  port: 8087
+
+spring:
+  mail:
+    host: smtp.yandex.ru
+    port: 465
+    protocol: smtps
+    username: stirlitz.service@yandex.ru
+    password: sIi_R3e
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: userok
+    password: p@ssw0rd
+    queues:
+      registration-mail: registration_mail
+
+service:
+  activation:
+    uri: http://127.0.0.1:8086/user/activation?id={id}
